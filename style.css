@@ -16,7 +16,7 @@ body {
     width: 300px;
     background-color: rgb(44, 43, 43);
     border-radius: 10px;
-    box-shadow: 0px 4px rgb(213, 213, 213);
+    box-shadow: 4px 4px rgb(146, 146, 146);
     font-family: "Helvetica Neue", sans-serif;
     overflow: hidden;
 }
@@ -47,6 +47,11 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
 }
 
 .button-zero {
@@ -62,7 +67,8 @@ body {
 }
 
 button:active {
-    opacity: 0.7;
+    opacity: 0.5;
+    transform: scale(0.94);
 }
 
 .bg-orange {
